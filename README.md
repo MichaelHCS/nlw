@@ -17,3 +17,4 @@ Projeto contruido do evento Next Level Week da Rockseat
 ## Contato
 
 michaelhenriquecs25@gmail.com
+michael_sulamerica@hotmail.com
