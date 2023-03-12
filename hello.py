@@ -1,2 +1,1 @@
-
 print("tudo bem senhor?")
