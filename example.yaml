@@ -1,1 +1,13 @@
-nome: "hello word"
+stages:
+  - stage: Build
+    displayName: 'Build'
+    steps:
+      - script: echo 'Compilando o código...'
+  - stage: Test
+    displayName: 'Test'
+    steps:
+      - script: echo 'Executando testes...'
+  - stage: Deploy
+    displayName: 'Deploy'
+    steps:
+      - script: echo 'Implantando o aplicativo...'
