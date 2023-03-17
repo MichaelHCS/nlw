@@ -1,13 +1,14 @@
-stages:
-  - stage: Build
-    displayName: 'Build'
-    steps:
-      - script: echo 'Compilando o código...'
-  - stage: Test
-    displayName: 'Test'
-    steps:
-      - script: echo 'Executando testes...'
-  - stage: Deploy
-    displayName: 'Deploy'
-    steps:
-      - script: echo 'Implantando o aplicativo...'
+---
+pipeline:
+  agent:
+    any
+  stages:
+    - stage: Build
+      steps:
+        - sh 'echo "Compilando o código..."'
+    - stage: Test
+      steps:
+        - sh 'echo "Executando testes..."'
+    - stage: Deploy
+      steps:
+        - sh 'echo "Implantando o aplicativo..."'
