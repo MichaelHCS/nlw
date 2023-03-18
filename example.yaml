@@ -1,13 +1,16 @@
-stage:
-  - stage: Build
-    displayName: 'Build'
-    steps:
-      - script: echo 'Compilando o código...'
-  - stage: Test
-    displayName: 'Test'
-    steps:
-      - script: echo 'Executando testes...'
-  - stage: Deploy
-    displayName: 'Deploy'
-    steps:
-      - script: echo 'Implantando o aplicativo...'
+# Jenkinsfile.yaml
+
+pipeline:
+  agent:
+    label: my-worker
+  stages:
+    - stage: "Build"
+      steps:
+        - sh "npm install"
+        - sh "npm run build"
+    - stage: "Test"
+      steps:
+        - sh "npm run test"
+    - stage: "Deploy"
+      steps:
+        - sh "npm run deploy"
