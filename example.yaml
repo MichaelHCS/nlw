@@ -1,96 +1,15 @@
-pipeline {
-    agent 
-   
-any
-    stages {
-        
-    stages {
-        stage(
-    stages {
-       
-
-    stages {
-
-   
-stage('Build') {
-            steps {
-                sh 
-            steps {
-                sh
-
-            steps {
-
-            steps
-
-           
-'npm install'
-                sh 
-                sh
-'npm build'
-            }
-        }
-        
-            }
-        }
-        stage
-
-            }
-        }
-stage('Test') {
-            steps {
-                sh 
-            steps {
-                sh
-
-            steps
-
-           
-'npm test'
-            }
-        }
-        
-            }
-        }
-        stage
-
-            }
-        }
-
-            }
-       
-
-            }
-
-           
-stage('Deploy') {
-            steps {
-                sh 
-            steps {
-                sh
-
-            steps {
-               
-
-            steps {
-
-            steps
-
-           
-'npm deploy'
-            }
-        }
-    }
-}
-
-            }
-        }
-    }
-
-            }
-        }
-   
-
-            }
-        }
-
-            }
+pipeline:
+  agent:
+    docker:
+      image: node:latest
+  stages:
+    - stage: Build
+      steps:
+        - npm install
+        - npm run build
+    - stage: Test
+      steps:
+        - npm run test
+    - stage: Deploy
+      steps:
+        - echo "Deploying..."
