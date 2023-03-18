@@ -1,16 +1,96 @@
-# Jenkinsfile.yaml
+pipeline {
+    agent 
+   
+any
+    stages {
+        
+    stages {
+        stage(
+    stages {
+       
 
-pipeline:
-  agent:
-    label: my-worker
-  stages:
-    - stage: "Build"
-      steps:
-        - sh "npm install"
-        - sh "npm run build"
-    - stage: "Test"
-      steps:
-        - sh "npm run test"
-    - stage: "Deploy"
-      steps:
-        - sh "npm run deploy"
+    stages {
+
+   
+stage('Build') {
+            steps {
+                sh 
+            steps {
+                sh
+
+            steps {
+
+            steps
+
+           
+'npm install'
+                sh 
+                sh
+'npm build'
+            }
+        }
+        
+            }
+        }
+        stage
+
+            }
+        }
+stage('Test') {
+            steps {
+                sh 
+            steps {
+                sh
+
+            steps
+
+           
+'npm test'
+            }
+        }
+        
+            }
+        }
+        stage
+
+            }
+        }
+
+            }
+       
+
+            }
+
+           
+stage('Deploy') {
+            steps {
+                sh 
+            steps {
+                sh
+
+            steps {
+               
+
+            steps {
+
+            steps
+
+           
+'npm deploy'
+            }
+        }
+    }
+}
+
+            }
+        }
+    }
+
+            }
+        }
+   
+
+            }
+        }
+
+            }
