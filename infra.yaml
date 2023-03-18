@@ -1,13 +1,15 @@
-import node
 
 node{
   stage('build'){
     sh 'python3 -V'
   }
   stage('test'){
-    git branch: 'master' , url: 'https://github.com/MichaelHCS/nlw-esports-explorer.git' 
+    git branch : 'master' , url : 'https://github.com/MichaelHCS/nlw-esports-explorer.git'
     sh 'python3 main.py'
     }
+    
     stage('deploy'){
       echo "finished :D"
     }
+    
+}
