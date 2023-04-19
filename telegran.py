@@ -2,8 +2,6 @@ import time
 import telegram
 
 
-
-
 # Token do seu bot do Telegram
 telegram_token = '5897063253:AAEvHFH5IfS8yg18gZti0q-VfL6h2GayMN0'
 
