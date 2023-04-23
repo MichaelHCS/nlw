@@ -13,10 +13,10 @@ app.get('/', (req, res) => {
 app.post('/github-webhook', (req, res) => {
     console.log(res)
     const pr = req.body.pull_request.html_url;
-    const token = '6046965535:AAGCo4blpi5y7Fpsk6Yy1K-0I-i8lffnaQI';
+    const token = 'TOKEN';
     const bot = new TelegramBot(token, { polling: false });
 
-    const chatId = 5893192823; // Id do chat para onde a mensagem será enviada
+    const chatId = ID; // Id do chat para onde a mensagem será enviada
     const mensagem = "Foi aberto um PR Link: " + pr; 
 
 
